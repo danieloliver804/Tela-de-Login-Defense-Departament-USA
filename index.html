@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+	
+<head>
+	
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Governo do Estados Unidos da América</title>
+	
+	<style>
+		*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		
+		body{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url("img/plano-de-fundo.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		}
+
+		#box-form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: rgba(208, 211, 208, 0.7);
+		border: solid 6px rgb(255, 255, 255);
+		border-radius: 20px;
+		margin-left: -29px;
+		width: 20%;
+		height: 500px;
+		}
+
+		#box-form a{
+		color: rgb(0, 0, 0);
+		font: 700 18px Arial;
+		text-decoration: none;
+		}
+
+		#box-fechar{
+		width: 90%;
+		margin-top: -30px;
+		display: flex;
+		justify-content: right;	
+		}
+
+		#box-fechar:hover{
+			cursor: pointer;
+		}
+
+		.box-main{
+		background-color: white;
+		width: 60%;
+		height: 40px;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		}
+
+		label{
+		margin-left: -15%;
+		margin-top: 20px;
+		margin-bottom: -15px;
+		color: rgb(0, 0, 0);
+		font: 800 17px Arial;
+		}
+		
+		#box-usuario{	
+		border: none;
+		width: 80%;
+		height: 70%;
+		}
+			
+		#box-senha{
+		border: none;
+		width: 80%;
+		height: 70%;
+		}
+		
+		#botao-acessar{
+		width: 30%;
+		height:30px;
+		background-color: white;
+		border: none;
+		border-radius: 7px;
+		color: black;
+		font: 700 17px Arial;
+		}
+
+		#botao-acessar:hover{
+			cursor: pointer;
+		}
+		
+		#logo-img{
+		margin-bottom: -20px;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+	
+		<form id="box-form" action="">
+
+			<div id="box-fechar">
+
+				<img src="img/icon-close.png" alt="Fechar">
+	
+			</div>
+							
+			<label for="box-usuario">Nome de Usuário:</label>
+			<br>
+			
+			<div class="box-main">
+
+				<img src="img/icon-profile-user.png">
+					
+				<input id="box-usuario" type="">
+
+			</div>
+		
+			<label for="box-senha">Senha de Usuário:</label>
+			
+			<br>
+			
+				<div class="box-main">
+
+					<img src="img/icon-password-user.png">
+
+					<input id="box-senha" type="password" name="senha">
+
+				</div>
+			
+			<br>
+				
+			<input id="botao-acessar" type="submit" value="Login"><br>
+			
+			<a href="#">Esqueci a senha</a><br>
+			
+			<img id="logo-img" src="img/logo-defense-departament.png" width="250px">
+		
+		</form>
+
+	<script> 
+	
+	var botao =
+	document.getElementById("botao-acessar");
+	
+	botao.onclick = enviarFormulario; 
+	
+	function enviarFormulario(){ 
+	
+	alert("Acesso Permitido!"); 
+	
+}
+ 
+	</script>
+		
+</body>
+
+</html>
